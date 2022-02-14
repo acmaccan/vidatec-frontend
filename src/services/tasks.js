@@ -1,7 +1,7 @@
 export const getAll = async () => {
   const token = JSON.parse(window.localStorage.getItem('loggedUser'));
 
-  const response = await fetch('https://localhost:5000/tasks', {
+  const response = await fetch('https://vidatec-backend.herokuapp.com/tasks', {
     headers: {
       'Content-Type': 'application/json',
       'Authorization': `Bearer ${token}`,
@@ -16,7 +16,7 @@ export const getAll = async () => {
 export const create = async(task) => {
   const token = JSON.parse(window.localStorage.getItem('loggedUser'));
 
-  const response = await fetch('https://localhost:5000/tasks', {
+  const response = await fetch('https://vidatec-backend.herokuapp.com/tasks', {
     method: 'POST',
     body: JSON.stringify({
         title: task,
