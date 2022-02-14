@@ -33,7 +33,7 @@ export const create = async(task) => {
   return data;
 };
 
-export const complete = async(url, isCompleted, id) => {
+export const complete = async(url, isCompleted) => {
   const token = JSON.parse(window.localStorage.getItem('loggedUser'));
 
   const response = await fetch (url, {
