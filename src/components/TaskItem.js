@@ -32,7 +32,7 @@ const TaskItem = (props) => {
 
     setTimeout(() => {
       refreshHandler();
-    }, 100);
+    }, 500);
     
     return data;
 
@@ -53,7 +53,7 @@ const TaskItem = (props) => {
 
       setTimeout(() => {
         refreshHandler();
-      }, 100);
+      }, 500);
 
       return data;
       
